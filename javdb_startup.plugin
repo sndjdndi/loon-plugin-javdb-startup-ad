@@ -1,0 +1,8 @@
+#!name=JavDB Startup Ad
+#!desc=Disable splash_ad returned by the startup endpoint.
+
+[Script]
+http-response ^https:\/\/apidd\.spthgb\.com\/api\/v1\/startup script-path=https://raw.githubusercontent.com/sndjdndi/loon-plugin-javdb-startup-ad/main/javdb_startup_ad.js, requires-body=true, timeout=10, tag=JavDB Startup Ad
+
+[MITM]
+hostname = apidd.spthgb.com
